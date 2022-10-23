@@ -13,15 +13,15 @@ const Login = () => {
     // .catch((err)=>setError(err))
     // )
     const dummyData={
-      "userName":"Alyeldeen",
-      "password":"ZombyMangooooooz"
+      "email":"7amo@outlook.com",
+      "password":"12345"
     };
-    axios.post('https://e7gezli.herokuapp.com/lala' ,dummyData)
+    axios.post('https://e7gezli.herokuapp.com/login' ,dummyData)
         .then(response =>{
             console.log(response)
         })
         .catch(error =>{
-            console.log(error.response)
+            console.log(error)
         })
         console.log(JSON.stringify(data))
   },[])
